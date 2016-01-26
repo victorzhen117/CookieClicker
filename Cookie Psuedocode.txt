@@ -1,0 +1,81 @@
+Victor Zhen
+1/6/14
+
+imports
+
+public class Cookie implements ActionListener
+{
+ int counter
+ int clickers
+ int grandmas
+ int factories
+ ...
+
+ public Cookie()
+ {
+  counter = 0
+  clickers = 0
+  grandma = 0
+  factory = 0
+  timeMachine = 0
+
+  JLabel cookie = new JLabel("cookie.jpg")
+  JLabel clicker = new JLabel("clicker.jpg")
+  JLabel grandma = new JLabel("grandma.jpg")
+  JLabel factory = new JLabel("factory.jpg")
+  JLabel timeMachine= new JLabel("timeMachine.jpg")
+
+  //set alignments using boxlayout
+
+  cookie.addActionListener(this)
+  clicker.addActionListener(this)
+  grandma.addActionListener(this)
+  factory.addActionListener(this)
+  timeMachine.addActionListener(this)
+
+  JLabel label = new JLabel ("Cookies: " + counter)
+
+  add (cookie)
+  add (label)
+ 
+  setPreferredSize (new Dimension(300, 40))
+  setBackground (Color.cyan)
+
+ }
+
+
+ //different types of increments to increase the counter
+ public void grandmaIncrement(int numberOfGrandmas, int counter)
+ {
+  -increment based on number of grandmas using time-
+ }
+
+ public void clickerIncrement(int numberOfClickers, int counter)
+ {
+  -increment based on number of autoclickers using time-
+ }
+ 
+ public void grandmaIncrement(int numberOfGrandmas, int counter)
+ { 
+  -increment based on number of grandmas using time-
+ }
+ 
+ public void factoryIncrement(int numberOfFacotories, int counter)
+ { 
+  -increment based on number of factories using time-
+ }
+ 
+ public void timeMachineIncrement(int numberOfTimeMachines, int counter)
+ {
+  -increment based on number of time machines using time-
+ }
+
+
+ 
+ public void actionPerformed(ActionEvent e) 
+ {
+   counter++
+   ("Cookies : " + counter)
+ }
+
+} 

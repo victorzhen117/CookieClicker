@@ -1,0 +1,16 @@
+Victor Zhen
+1/6/14
+
+public class CookieDriver
+{
+ public static void main (String[] args)
+ {
+  JFrame frame = new JFrame("Cookie Clicker")
+  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
+
+  frame.getContentPane().add(new Cookie())
+
+  frame.pack()
+  frame.setVisible(true)
+ }
+}
